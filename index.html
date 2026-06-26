@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio Artístico de los Representativos Dancísticos de la EMA: Latin Dance, Danza Tradicional, Contemporánea y Urbana." />
+  <title>Portafolio Artístico · Representativos Dancísticos EMA</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Estilos propios -->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#portada">
+        <span class="brand-logo">EMA</span>
+        <span class="brand-text d-none d-sm-inline">Representativos Dancísticos</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navItems">
+        <ul class="navbar-nav ms-auto small text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="#carta">Presentación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#indice">Índice</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Grupos</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#latin">Latin Dance</a></li>
+              <li><a class="dropdown-item" href="#tradicional">Danza Tradicional</a></li>
+              <li><a class="dropdown-item" href="#contemporanea">Danza Contemporánea</a></li>
+              <li><a class="dropdown-item" href="#urbana">Danza Urbana</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#impacto">Impacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ 1. PORTADA ============ -->
+  <header id="portada" class="cover-hero text-white">
+    <!-- Paneles de los 4 representativos (escritorio) -->
+    <div class="cover-panels">
+      <a href="#latin" class="cover-panel cover-panel--full" style="background-image:url('assets/img/latindance.png'); background-position:center top;">
+        <span class="cover-panel-label visually-hidden">Latin Dance</span>
+      </a>
+      <a href="#tradicional" class="cover-panel cover-panel--full" style="background-image:url('assets/img/tradicional.png'); background-position:center center;">
+        <span class="cover-panel-label">Tradicional</span>
+      </a>
+      <a href="#contemporanea" class="cover-panel cover-panel--full" style="background-image:url('assets/img/contemporaneo.png'); background-position:center center;">
+        <span class="cover-panel-label">Contemporáneo</span>
+      </a>
+      <a href="#urbana" class="cover-panel cover-panel--full" style="background-image:url('assets/img/urbano.png'); background-position:center center;">
+        <span class="cover-panel-label">Urbano</span>
+      </a>
+    </div>
+
+    <!-- Carrusel de los 4 representativos (celular) -->
+    <div id="coverCarousel" class="carousel slide cover-carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#coverCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Latin Dance"></button>
+        <button type="button" data-bs-target="#coverCarousel" data-bs-slide-to="1" aria-label="Tradicional"></button>
+        <button type="button" data-bs-target="#coverCarousel" data-bs-slide-to="2" aria-label="Contemporáneo"></button>
+        <button type="button" data-bs-target="#coverCarousel" data-bs-slide-to="3" aria-label="Urbano"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#latin" class="cover-slide">
+            <img src="assets/img/latindance.png" alt="Latin Dance" />
+            <span class="cover-slide-label">Latin Dance</span>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#tradicional" class="cover-slide">
+            <img src="assets/img/tradicional.png" alt="Danza Tradicional" />
+            <span class="cover-slide-label">Tradicional</span>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#contemporanea" class="cover-slide">
+            <img src="assets/img/contemporaneo.png" alt="Danza Contemporánea" />
+            <span class="cover-slide-label">Contemporáneo</span>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#urbana" class="cover-slide">
+            <img src="assets/img/urbano.png" alt="Danza Urbana" />
+            <span class="cover-slide-label">Urbano</span>
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#coverCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#coverCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Encabezado inferior -->
+    <div class="cover-top text-center">
+      <div class="cover-logo mx-auto mb-3">
+        <span>EMA</span>
+      </div>
+      <p class="cover-kicker">Escuela Municipal de Arte</p>
+      <h1 class="cover-title">Portafolio Artístico</h1>
+      <h2 class="cover-subtitle">Representativos Dancísticos</h2>
+      <p class="cover-year">2026</p>
+      <a href="#carta" class="btn btn-outline-light btn-lg rounded-pill px-4 mt-2 scroll-cue">
+        Comenzar <i class="bi bi-arrow-down ms-1"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ 2. CARTA DE PRESENTACIÓN ============ -->
+  <section id="carta" class="page section-light">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Carta de presentación</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-7">
+          <h3 class="h4 text-accent mb-3">¿Qué es la EMA?</h3>
+          <p class="lead-sm">La <strong>Escuela Municipal de Arte (EMA)</strong> es un espacio formativo dedicado al desarrollo integral de sus estudiantes a través de la danza. Aquí convergen la disciplina técnica, la sensibilidad artística y el trabajo en equipo para dar vida a nuestros representativos dancísticos.</p>
+
+          <h3 class="h4 text-accent mb-3 mt-4">¿Cuál es el propósito de este portafolio?</h3>
+          <p>Documentar, celebrar y dar a conocer la trayectoria de los cuatro representativos de la EMA. Este portafolio es una ventana hacia su identidad, su escena y su impacto cultural, pensado para la comunidad, instituciones y futuros integrantes.</p>
+
+          <h3 class="h4 text-accent mb-3 mt-4">La danza en la formación integral</h3>
+          <p>Bailar trasciende el escenario: forma personas. La danza enseña constancia, escucha, autoconfianza y respeto por el cuerpo y por el otro. En la EMA entendemos cada coreografía como una herramienta de crecimiento humano.</p>
+        </div>
+        <div class="col-lg-5">
+          <figure class="photo photo-portrait" data-photo="Fotografía grupal / EMA">
+            <figcaption>Reemplaza con una fotografía representativa de la EMA</figcaption>
+          </figure>
+          <div class="quote-card mt-4">
+            <i class="bi bi-quote"></i>
+            <p>"El movimiento es el lenguaje en el que nuestros estudiantes aprenden a decir quiénes son."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. ÍNDICE ============ -->
+  <section id="indice" class="page section-dark">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2 class="section-title text-white">Índice · Representativos Dancísticos</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <a href="#latin" class="index-card">
+            <span class="index-num">01</span>
+            <h3>Latin Dance</h3>
+            <p>Salsa · Bachata · Cha-cha · Merengue</p>
+            <i class="bi bi-arrow-right-circle"></i>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="#tradicional" class="index-card">
+            <span class="index-num">02</span>
+            <h3>Danza Tradicional</h3>
+            <p>Folclor · Raíces · Cultura</p>
+            <i class="bi bi-arrow-right-circle"></i>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="#contemporanea" class="index-card">
+            <span class="index-num">03</span>
+            <h3>Danza Contemporánea</h3>
+            <p>Expresión · Composición · Cuerpo</p>
+            <i class="bi bi-arrow-right-circle"></i>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="#urbana" class="index-card">
+            <span class="index-num">04</span>
+            <h3>Danza Urbana</h3>
+            <p>Hip Hop · Dancehall · Breaking</p>
+            <i class="bi bi-arrow-right-circle"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row g-4 mt-1">
+        <div class="col-md-4"><a href="#galeria" class="index-card index-card--mini"><h3>Galería general</h3><i class="bi bi-images"></i></a></div>
+        <div class="col-md-4"><a href="#impacto" class="index-card index-card--mini"><h3>Impacto artístico</h3><i class="bi bi-stars"></i></a></div>
+        <div class="col-md-4"><a href="#testimonios" class="index-card index-card--mini"><h3>Testimonios</h3><i class="bi bi-chat-quote"></i></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. LATIN DANCE ============ -->
+  <section id="latin" class="page group-section" data-accent="latin">
+    <!-- Página 1: Identidad -->
+    <div class="container">
+      <div class="group-hero">
+        <span class="group-tag">Representativo 01</span>
+        <h2 class="group-title">Latin Dance</h2>
+        <p class="group-frase">"El sabor también se entrena."</p>
+      </div>
+      <div class="row g-5 mt-2 align-items-start">
+        <div class="col-lg-6">
+          <h3 class="block-title"><i class="bi bi-book"></i> Historia breve</h3>
+          <p>Latin Dance nació del deseo de llevar la energía de los ritmos latinos a la escena estudiantil. Desde sus inicios ha sido un punto de encuentro para quienes sienten la música caribeña como parte de su identidad.</p>
+          <div class="data-row">
+            <div class="data-item"><span>Director / Docente</span><strong>Nombre del director(a)</strong></div>
+            <div class="data-item"><span>Integrantes</span><strong>00 bailarines</strong></div>
+          </div>
+          <h3 class="block-title mt-4"><i class="bi bi-music-note-beamed"></i> Estilos</h3>
+          <div class="chip-list">
+            <span class="chip">Salsa</span><span class="chip">Bachata</span>
+            <span class="chip">Cha-cha-chá</span><span class="chip">Merengue</span>
+            <span class="chip">Mambo</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <figure class="photo photo-square" data-photo="Latin Dance · Identidad del grupo">
+            <figcaption>Foto de identidad del grupo</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Página 2: Escena -->
+      <div class="subpage-head"><span>Página 2</span><h3>En escena</h3></div>
+      <div class="row g-3">
+        <div class="col-lg-8">
+          <figure class="photo photo-wide" data-photo="Presentación principal">
+            <figcaption>Foto grande · Presentación destacada</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <div class="row g-3 h-100">
+            <div class="col-6 col-lg-12"><figure class="photo photo-mini" data-photo="Evento 1"><figcaption>Festival X</figcaption></figure></div>
+            <div class="col-6 col-lg-12"><figure class="photo photo-mini" data-photo="Evento 2"><figcaption>Gala anual</figcaption></figure></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3"><figure class="photo photo-mini" data-photo="Evento 3"><figcaption>Concurso regional</figcaption></figure></div>
+        <div class="col-6 col-md-3"><figure class="photo photo-mini" data-photo="Evento 4"><figcaption>Muestra EMA</figcaption></figure></div>
+        <div class="col-6 col-md-3"><figure class="photo photo-mini" data-photo="Evento 5"><figcaption>Encuentro latino</figcaption></figure></div>
+        <div class="col-6 col-md-3"><figure class="photo photo-mini" data-photo="Evento 6"><figcaption>Noche de salsa</figcaption></figure></div>
+      </div>
+
+      <!-- Página 3: Experiencia audiovisual -->
+      <div class="subpage-head"><span>Página 3</span><h3>Experiencia audiovisual</h3></div>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4 text-center">
+          <div class="qr-box" data-qr="https://www.youtube.com" data-qr-label="Video destacado"></div>
+          <p class="qr-caption"><i class="bi bi-youtube"></i> Video destacado</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="qr-box" data-qr="https://www.instagram.com" data-qr-label="Instagram / Reel"></div>
+          <p class="qr-caption"><i class="bi bi-instagram"></i> Instagram / Reel</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="block-title"><i class="bi bi-trophy"></i> Logros y participaciones</h3>
+          <ul class="achv-list">
+            <li>Participación en festival intercolegial.</li>
+            <li>Presentación en gala cultural de la ciudad.</li>
+            <li>Reconocimiento por mejor energía escénica.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. DANZA TRADICIONAL ============ -->
+  <section id="tradicional" class="page group-section" data-accent="tradicional">
+    <div class="container">
+      <div class="group-hero">
+        <span class="group-tag">Representativo 02</span>
+        <h2 class="group-title">Danza Tradicional</h2>
+        <p class="group-frase">"Bailamos la memoria de nuestra tierra."</p>
+      </div>
+      <div class="row g-5 mt-2 align-items-start">
+        <div class="col-lg-6">
+          <h3 class="block-title"><i class="bi bi-book"></i> Historia</h3>
+          <p>El representativo de Danza Tradicional preserva y proyecta el folclor a través del cuerpo. Cada paso es un homenaje a las raíces y a las generaciones que nos precedieron.</p>
+          <h3 class="block-title mt-4"><i class="bi bi-globe-americas"></i> Importancia cultural</h3>
+          <p>Mantener vivas las tradiciones fortalece la identidad de la comunidad y conecta a los jóvenes con su herencia cultural.</p>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="block-title"><i class="bi bi-music-note-list"></i> Ritmos representados</h3>
+          <div class="chip-list">
+            <span class="chip">Cumbia</span><span class="chip">Joropo</span>
+            <span class="chip">Bambuco</span><span class="chip">Currulao</span>
+          </div>
+          <h3 class="block-title mt-4"><i class="bi bi-palette"></i> Vestuarios típicos</h3>
+          <p>Trajes regionales bordados a mano, faldas amplias, sombreros y accesorios que cuentan historias de cada región.</p>
+        </div>
+      </div>
+
+      <div class="subpage-head"><span>Página 2</span><h3>Escena y detalles</h3></div>
+      <div class="row g-3">
+        <div class="col-md-6"><figure class="photo photo-wide" data-photo="Escena folclórica"><figcaption>Foto de escena</figcaption></figure></div>
+        <div class="col-md-3"><figure class="photo photo-tall" data-photo="Detalle del vestuario"><figcaption>Detalle de vestuario</figcaption></figure></div>
+        <div class="col-md-3"><figure class="photo photo-tall" data-photo="Foto grupal"><figcaption>Foto grupal</figcaption></figure></div>
+      </div>
+
+      <div class="subpage-head"><span>Página 3</span><h3>Audiovisual y reconocimientos</h3></div>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4 text-center">
+          <div class="qr-box" data-qr="https://www.youtube.com" data-qr-label="Presentación folclórica"></div>
+          <p class="qr-caption"><i class="bi bi-camera-reels"></i> Presentación folclórica</p>
+        </div>
+        <div class="col-md-8">
+          <h3 class="block-title"><i class="bi bi-award"></i> Festivales y reconocimientos</h3>
+          <ul class="achv-list">
+            <li>Festival de danzas folclóricas regional.</li>
+            <li>Encuentro de tradiciones interinstitucional.</li>
+            <li>Mención de honor por preservación cultural.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. DANZA CONTEMPORÁNEA ============ -->
+  <section id="contemporanea" class="page group-section" data-accent="contemporanea">
+    <div class="container">
+      <div class="group-hero">
+        <span class="group-tag">Representativo 03</span>
+        <h2 class="group-title">Danza Contemporánea</h2>
+        <p class="group-frase">"El cuerpo dice lo que las palabras callan."</p>
+      </div>
+      <div class="row g-5 mt-2 align-items-start">
+        <div class="col-lg-6">
+          <h3 class="block-title"><i class="bi bi-lightbulb"></i> Propuesta artística</h3>
+          <p>Una búsqueda constante de la expresión auténtica a través del movimiento libre, la improvisación y la exploración del espacio escénico.</p>
+          <h3 class="block-title mt-4"><i class="bi bi-bullseye"></i> Temáticas abordadas</h3>
+          <div class="chip-list">
+            <span class="chip">Identidad</span><span class="chip">Emociones</span>
+            <span class="chip">Sociedad</span><span class="chip">Naturaleza</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="block-title"><i class="bi bi-diagram-3"></i> Metodología creativa</h3>
+          <p>El proceso parte de la investigación corporal, la composición colectiva y la retroalimentación, dando lugar a piezas originales y profundamente personales.</p>
+          <figure class="photo photo-wide mt-3" data-photo="Composición escénica"><figcaption>Imagen expresiva</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="subpage-head"><span>Página 2</span><h3>Composiciones escénicas</h3></div>
+      <div class="row g-3">
+        <div class="col-md-4"><figure class="photo photo-tall" data-photo="Expresión 1"><figcaption>Fotografía expresiva</figcaption></figure></div>
+        <div class="col-md-4"><figure class="photo photo-tall" data-photo="Expresión 2"><figcaption>Composición escénica</figcaption></figure></div>
+        <div class="col-md-4"><figure class="photo photo-tall" data-photo="Expresión 3"><figcaption>Movimiento</figcaption></figure></div>
+      </div>
+
+      <div class="subpage-head"><span>Página 3</span><h3>Testimonio y trayectoria</h3></div>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4 text-center">
+          <div class="qr-box" data-qr="https://www.youtube.com" data-qr-label="Video contemporánea"></div>
+          <p class="qr-caption"><i class="bi bi-play-circle"></i> Video destacado</p>
+        </div>
+        <div class="col-md-4">
+          <div class="quote-card">
+            <i class="bi bi-quote"></i>
+            <p>"En contemporánea encontré una forma honesta de habitar mi cuerpo."</p>
+            <span class="quote-author">— Integrante del grupo</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="block-title"><i class="bi bi-stars"></i> Participaciones</h3>
+          <ul class="achv-list">
+            <li>Muestra de danza contemporánea.</li>
+            <li>Colaboración interdisciplinaria con artes visuales.</li>
+            <li>Festival de creación escénica joven.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. DANZA URBANA ============ -->
+  <section id="urbana" class="page group-section" data-accent="urbana">
+    <div class="container">
+      <div class="group-hero">
+        <span class="group-tag">Representativo 04</span>
+        <h2 class="group-title">Danza Urbana</h2>
+        <p class="group-frase">"La calle es nuestro escenario."</p>
+      </div>
+      <div class="row g-5 mt-2 align-items-start">
+        <div class="col-lg-6">
+          <h3 class="block-title"><i class="bi bi-fire"></i> Filosofía del grupo</h3>
+          <p>Energía, actitud y autenticidad. La danza urbana es un espacio de libertad donde cada integrante encuentra su propio estilo y lo lleva al límite.</p>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="block-title"><i class="bi bi-music-note-beamed"></i> Estilos</h3>
+          <div class="chip-list">
+            <span class="chip">Hip Hop</span><span class="chip">Dancehall</span>
+            <span class="chip">Breaking</span><span class="chip">Popping</span>
+            <span class="chip">House</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="subpage-head"><span>Página 2</span><h3>Competencias y showcases</h3></div>
+      <div class="row g-3">
+        <div class="col-md-8"><figure class="photo photo-wide" data-photo="Showcase urbano"><figcaption>Fotografía dinámica</figcaption></figure></div>
+        <div class="col-md-4"><figure class="photo photo-tall" data-photo="Battle / Competencia"><figcaption>Competencia</figcaption></figure></div>
+      </div>
+
+      <div class="subpage-head"><span>Página 3</span><h3>Coreografías y reconocimientos</h3></div>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4 text-center">
+          <div class="qr-box" data-qr="https://www.youtube.com" data-qr-label="Coreografía urbana"></div>
+          <p class="qr-caption"><i class="bi bi-music-player"></i> Coreografía</p>
+        </div>
+        <div class="col-md-8">
+          <h3 class="block-title"><i class="bi bi-trophy"></i> Eventos y reconocimientos</h3>
+          <ul class="achv-list">
+            <li>Showcase urbano intercolegial.</li>
+            <li>Battle de estilos libres.</li>
+            <li>Reconocimiento por mejor coreografía urbana.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. GALERÍA GENERAL ============ -->
+  <section id="galeria" class="page section-dark">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">08</span>
+        <h2 class="section-title text-white">Galería general</h2>
+        <div class="section-rule"></div>
+        <p class="section-lead text-white-50">El proceso detrás del escenario: ensayos, camerinos, preparación y convivencia.</p>
+      </div>
+      <div class="collage">
+        <figure class="photo collage-item c1" data-photo="Ensayos"><figcaption>Ensayos</figcaption></figure>
+        <figure class="photo collage-item c2" data-photo="Camerinos"><figcaption>Camerinos</figcaption></figure>
+        <figure class="photo collage-item c3" data-photo="Preparación"><figcaption>Preparación</figcaption></figure>
+        <figure class="photo collage-item c4" data-photo="Convivencia"><figcaption>Convivencia</figcaption></figure>
+        <figure class="photo collage-item c5" data-photo="Presentaciones"><figcaption>Presentaciones</figcaption></figure>
+        <figure class="photo collage-item c6" data-photo="Detrás de cámaras"><figcaption>Detrás de cámaras</figcaption></figure>
+        <figure class="photo collage-item c7" data-photo="Calentamiento"><figcaption>Calentamiento</figcaption></figure>
+        <figure class="photo collage-item c8" data-photo="Equipo"><figcaption>Equipo EMA</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. IMPACTO ARTÍSTICO Y CULTURAL ============ -->
+  <section id="impacto" class="page section-light">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">09</span>
+        <h2 class="section-title">Impacto artístico y cultural</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="impact-card">
+            <i class="bi bi-person-arms-up"></i>
+            <h3>Transformación del estudiante</h3>
+            <p>Los representativos fortalecen la autoestima, la expresión y el sentido de pertenencia de cada estudiante.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="impact-card">
+            <i class="bi bi-people"></i>
+            <h3>Aportes a la comunidad</h3>
+            <p>Llevan cultura y arte a la comunidad, generando espacios de encuentro y orgullo institucional.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="impact-card">
+            <i class="bi bi-gem"></i>
+            <h3>Disciplina, equipo y creatividad</h3>
+            <p>Cada ensayo es una lección de constancia, colaboración y creación que trasciende el escenario.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center stats mt-5">
+        <div class="col-6 col-md-3"><span class="stat-num" data-count="4">0</span><p>Representativos</p></div>
+        <div class="col-6 col-md-3"><span class="stat-num" data-count="100">0</span><p>Bailarines</p></div>
+        <div class="col-6 col-md-3"><span class="stat-num" data-count="30">0</span><p>Presentaciones</p></div>
+        <div class="col-6 col-md-3"><span class="stat-num" data-count="12">0</span><p>Reconocimientos</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10. TESTIMONIOS ============ -->
+  <section id="testimonios" class="page section-accent">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">10</span>
+        <h2 class="section-title text-white">Testimonios</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <blockquote class="testimonial">
+            <p>"La danza me enseñó a confiar en mí y en mi equipo."</p>
+            <footer>Estudiante</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="testimonial">
+            <p>"Ver crecer a mis bailarines en el escenario y en la vida no tiene precio."</p>
+            <footer>Docente</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="testimonial">
+            <p>"La EMA me dio una familia y una pasión que sigo llevando conmigo."</p>
+            <footer>Egresado</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 11. CRÉDITOS ============ -->
+  <section id="creditos" class="page section-dark">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">11</span>
+        <h2 class="section-title text-white">Créditos</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg"><div class="credit-item"><i class="bi bi-clipboard-heart"></i><span>Coordinación artística</span><strong>Nombre</strong></div></div>
+        <div class="col-6 col-md-4 col-lg"><div class="credit-item"><i class="bi bi-mortarboard"></i><span>Docentes</span><strong>Nombres</strong></div></div>
+        <div class="col-6 col-md-4 col-lg"><div class="credit-item"><i class="bi bi-camera"></i><span>Fotografía</span><strong>Nombre</strong></div></div>
+        <div class="col-6 col-md-4 col-lg"><div class="credit-item"><i class="bi bi-vector-pen"></i><span>Diseño</span><strong>Nombre</strong></div></div>
+        <div class="col-6 col-md-4 col-lg"><div class="credit-item"><i class="bi bi-archive"></i><span>Archivo</span><strong>EMA</strong></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 12. CONTACTO ============ -->
+  <section id="contacto" class="page contact-section text-white">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">12</span>
+        <h2 class="section-title text-white">Contacto</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <a href="https://www.instagram.com" class="contact-link" target="_blank" rel="noopener"><i class="bi bi-instagram"></i> <span>@ema_representativos</span></a>
+          <a href="https://www.facebook.com" class="contact-link" target="_blank" rel="noopener"><i class="bi bi-facebook"></i> <span>EMA Representativos Dancísticos</span></a>
+          <a href="mailto:contacto@ema.edu" class="contact-link"><i class="bi bi-envelope"></i> <span>contacto@ema.edu</span></a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="qr-box qr-box--light mx-auto" data-qr="https://www.instagram.com" data-qr-label="Redes EMA"></div>
+          <p class="qr-caption text-white-50">Escanea para visitar nuestras redes</p>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <p>Portafolio Artístico de los Representativos Dancísticos de la EMA · 2026</p>
+        <p class="small text-white-50">Hecho con pasión por la danza.</p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Botón volver arriba -->
+  <a href="#portada" class="back-to-top" aria-label="Volver arriba"><i class="bi bi-chevron-up"></i></a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose"><i class="bi bi-x-lg"></i></span>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
